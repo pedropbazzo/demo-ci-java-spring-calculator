@@ -5,11 +5,6 @@ on:
   pull_request:
     branches: [master]
 
-env:
-  PROJECT_ID: ${{ secrets.GCE_PROJECT_ID }}
-  RUN_REGION: europe-west1
-  SERVICE_NAME: calculator-service
-
 jobs:
   build:
     runs-on: ubuntu-latest
