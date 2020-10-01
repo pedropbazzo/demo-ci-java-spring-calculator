@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CalculatorController {
 
     @PostMapping("/add")
-    public String add(@RequestBody AddDto param) {
-        return Integer.toString(Calculator.add(param.getA(), param.getB()));
+    public AddResultDto add(@RequestBody AddDto param) {
+        return new AddResultDto(param, Calculator.add(param.getA(), param.getB()));
     }
 }

@@ -10,7 +10,7 @@ Build and start the application
 ./gradlew bootrun
 ```
 
-Once started the calculator is listening on port 8080. Test the calculator with curl on the command line or with postmen.
+Once started the calculator is listening on port 8080. Test the calculator with [swagger-ui](http://localhost:8080/swagger-ui.html), curl on the command line or with postmen.
 
 ```bash
 curl --location --request POST '' \
