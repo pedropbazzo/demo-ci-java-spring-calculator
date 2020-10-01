@@ -16,5 +16,3 @@ USER appuser
 EXPOSE 8080
 
 ENTRYPOINT ["java","-jar","/app/calculator-service.jar"]
-# ENTRYPOINT [ "java -version" ]
-# ENTRYPOINT [ "java -jar calculator-service.jar"]
